@@ -19,24 +19,32 @@ const values = [
   },
 ]
 
+const companyLinkedinUrl = 'https://www.linkedin.com/company/agrisakha'
+const companyInstagramUrl =
+  'https://www.instagram.com/agrisakha_innovations?igsh=MTdybnV4Z2E4YTJ0bQ=='
+
 const teamMembers = [
   {
-    name: 'Founder & COO',
+    name: 'Niranjan',
     role: 'Founder & COO',
     image:
       'https://media.licdn.com/dms/image/v2/D5603AQEBD8C0eXtS9A/profile-displayphoto-crop_800_800/B56ZoLtpVOIsAI-/0/1761133109162?e=1772668800&v=beta&t=b3hSlZdGKlkIpsrpZZhi9YmYmxh8ppSQeQz0d1Rv6ow',
     bio: 'Leads vision, partnerships, and strategy for AI-driven agricultural transformation.',
     focus: 'Leadership, Ecosystem Growth',
     linkedin: 'https://www.linkedin.com/in/niranjanmd/',
+    phoneLabel: '+91 73539 57307',
+    phoneHref: 'tel:+917353957307',
   },
   {
-    name: 'Co-Founder & CTO',
+    name: 'Aditya',
     role: 'Co-Founder & CTO',
     image:
       'https://media.licdn.com/dms/image/v2/D5603AQH0A2awUri_jg/profile-displayphoto-shrink_400_400/B56ZOA8rrGG4Ak-/0/1733035222100?e=1772668800&v=beta&t=VNDHwJL9jCnuHh9k0Nkmxy8MjO7HNkhSni43202QhTg',
     bio: 'Drives technical architecture, product engineering, and AI delivery workflows.',
     focus: 'Technology, AI Platform',
     linkedin: 'https://www.linkedin.com/in/ozone170/',
+    phoneLabel: '+91 8217076246',
+    phoneHref: 'tel:+918217076246',
   },
 ]
 
@@ -45,10 +53,10 @@ export default function AboutPage() {
     <div className="container space-y-12 sm:space-y-14">
       <section className="panel-surface p-6 sm:p-8">
         <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
-          About AGREE-SAKHA Innovations
+          About AGRI-SAKHA Innovations
         </h1>
         <p className="mt-4 max-w-3xl text-base text-neutral-700 sm:text-lg">
-          AGREE-SAKHA Innovations builds AI-enabled agriculture solutions that help farming
+          AGRI-SAKHA Innovations builds AI-enabled agriculture solutions that help farming
           communities and agri-businesses make better decisions with confidence.
         </p>
       </section>
@@ -111,7 +119,7 @@ export default function AboutPage() {
       <section>
         <SectionHeader
           eyebrow="Team"
-          title="People Behind AGREE-SAKHA"
+          title="People Behind AGRI-SAKHA"
           description="We are focused on building a high-impact team with deep domain expertise."
         />
         <div className="grid gap-5 md:grid-cols-2">
@@ -134,16 +142,42 @@ export default function AboutPage() {
               <p className="mt-3 text-sm text-neutral-700">
                 <span className="font-semibold text-neutral-900">Focus:</span> {member.focus}
               </p>
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-4 inline-flex text-sm font-semibold text-primary-700 transition-colors hover:text-primary-500 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-              >
-                View on LinkedIn
-              </a>
+              <div className="mt-4 flex flex-wrap items-center gap-4">
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex text-sm font-semibold text-primary-700 transition-colors hover:text-primary-500 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  View on LinkedIn
+                </a>
+                <a
+                  href={member.phoneHref}
+                  className="inline-flex text-sm font-semibold text-primary-700 transition-colors hover:text-primary-500 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  {member.phoneLabel}
+                </a>
+              </div>
             </article>
           ))}
+        </div>
+        <div className="mt-5 flex flex-wrap items-center gap-4 text-sm">
+          <a
+            href={companyLinkedinUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex font-semibold text-primary-700 transition-colors hover:text-primary-500 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-100"
+          >
+            Company LinkedIn
+          </a>
+          <a
+            href={companyInstagramUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex font-semibold text-primary-700 transition-colors hover:text-primary-500 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-100"
+          >
+            Company Instagram
+          </a>
         </div>
       </section>
     </div>

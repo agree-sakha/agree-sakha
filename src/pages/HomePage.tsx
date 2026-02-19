@@ -62,7 +62,7 @@ export default function HomePage() {
               Data-Driven Farm Decisions That Improve Yield, Resilience, and Profitability
             </h1>
             <p className="mt-4 text-base leading-relaxed text-primary-100/95 sm:text-lg">
-              AGREE-SAKHA Innovations helps agricultural teams transform raw data into practical
+              AGRI-SAKHA Innovations helps agricultural teams transform raw data into practical
               recommendations, enabling faster decisions across crop health, inputs, and operational
               risk.
             </p>

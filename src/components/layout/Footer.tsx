@@ -7,7 +7,9 @@ const links = [
   { to: '/helpdesk', label: 'Helpdesk' },
 ]
 
-const linkedinUrl = 'https://www.linkedin.com/company/agrisakha/posts/?feedView=all'
+const companyLinkedinUrl = 'https://www.linkedin.com/company/agrisakha'
+const companyInstagramUrl =
+  'https://www.instagram.com/agrisakha_innovations?igsh=MTdybnV4Z2E4YTJ0bQ=='
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -17,7 +19,7 @@ export default function Footer() {
       <div className="container py-10 sm:py-12">
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
           <div>
-            <h2 className="text-2xl font-bold text-white">AGREE-SAKHA Innovations</h2>
+            <h2 className="text-2xl font-bold text-white">AGRI-SAKHA Innovations</h2>
             <p className="mt-3 max-w-md text-sm text-primary-100/90">
               Precision agriculture powered by responsible AI, built to support farmers with practical
               field intelligence.
@@ -42,20 +44,40 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Connect</h3>
-            <p className="mt-3 text-sm text-primary-100/90">agreesakhainnovatiovations@gmail.com</p>
+            <p className="mt-3 text-sm text-primary-100/90">agrisakhainnovatiovations@gmail.com</p>
             <a
-              href={linkedinUrl}
+              href={companyLinkedinUrl}
               target="_blank"
               rel="noreferrer"
               className="mt-3 inline-flex rounded-button px-2 py-1 text-sm font-semibold text-primary-100 transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900"
             >
               LinkedIn Updates
             </a>
+            <a
+              href={companyInstagramUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-2 inline-flex rounded-button px-2 py-1 text-sm font-semibold text-primary-100 transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900"
+            >
+              Instagram Updates
+            </a>
+            <a
+              href="tel:+917353957307"
+              className="mt-2 inline-flex rounded-button px-2 py-1 text-sm text-primary-100/90 transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900"
+            >
+              Niranjan: +91 73539 57307
+            </a>
+            <a
+              href="tel:+918217076246"
+              className="mt-2 inline-flex rounded-button px-2 py-1 text-sm text-primary-100/90 transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900"
+            >
+              Aditya: +91 8217076246
+            </a>
           </div>
         </div>
 
         <p className="mt-8 border-t border-primary-500/40 pt-6 text-sm text-primary-100/80">
-          © {currentYear} AGREE-SAKHA Innovations. All rights reserved.
+          © {currentYear} AGRI-SAKHA Innovations. All rights reserved.
         </p>
       </div>
     </footer>

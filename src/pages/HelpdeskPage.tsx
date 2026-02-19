@@ -7,14 +7,14 @@ const faqItems: FAQItem[] = [
   {
     id: 'general-1',
     category: 'General',
-    question: 'What does AGREE-SAKHA Innovations do?',
+    question: 'What does AGRI-SAKHA Innovations do?',
     answer:
       'We build AI-powered tools and decision systems that support agricultural planning, crop monitoring, and farm-level operational decisions.',
   },
   {
     id: 'general-2',
     category: 'General',
-    question: 'Who can work with AGREE-SAKHA?',
+    question: 'Who can work with AGRI-SAKHA?',
     answer:
       'We support farmers, farmer producer organizations, agri-input partners, and institutions looking to modernize agriculture workflows.',
   },
@@ -49,7 +49,7 @@ const faqItems: FAQItem[] = [
   {
     id: 'partners-1',
     category: 'Partnerships',
-    question: 'How can organizations partner with AGREE-SAKHA?',
+    question: 'How can organizations partner with AGRI-SAKHA?',
     answer:
       'Partnerships can include pilot programs, technology integration, co-developed initiatives, and ecosystem collaborations.',
   },

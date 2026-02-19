@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../../../img/logo.png'
+import logo from '../../../img/logo.jpeg'
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -42,9 +42,9 @@ export default function Navbar() {
             className="inline-flex items-center gap-2 rounded-button px-1 py-1 text-primary-700 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-100"
           >
             <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-primary-100 bg-white shadow-[0_8px_18px_-14px_rgba(26,29,26,0.5)] sm:h-11 sm:w-11">
-              <img src={logo} alt="AGREE-SAKHA logo" className="h-[80%] w-[80%] object-contain" />
+              <img src={logo} alt="AGRI-SAKHA logo" className="h-[80%] w-[80%] object-contain" />
             </span>
-            <span className="text-base font-extrabold tracking-tight sm:text-lg">AGREE-SAKHA</span>
+            <span className="text-base font-extrabold tracking-tight sm:text-lg">AGRI-SAKHA</span>
           </NavLink>
 
           <div className="hidden items-center gap-2 md:flex">

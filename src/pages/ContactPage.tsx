@@ -1,13 +1,15 @@
 import ContactForm from '../components/common/ContactForm'
 
-const linkedinUrl = 'https://www.linkedin.com/company/agrisakha/posts/?feedView=all'
+const companyLinkedinUrl = 'https://www.linkedin.com/company/agrisakha'
+const companyInstagramUrl =
+  'https://www.instagram.com/agrisakha_innovations?igsh=MTdybnV4Z2E4YTJ0bQ=='
 
 export default function ContactPage() {
   return (
     <div className="container space-y-8 sm:space-y-10">
       <section className="panel-surface p-6 sm:p-8">
         <h1 className="text-3xl font-extrabold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
-          Contact AGREE-SAKHA Innovations
+          Contact AGRI-SAKHA Innovations
         </h1>
         <p className="mt-4 max-w-3xl text-base text-neutral-700 sm:text-lg">
           Share your agriculture challenge, support need, or partnership interest. We will respond
@@ -27,7 +29,7 @@ export default function ContactPage() {
             <div>
               <dt className="text-sm font-semibold uppercase tracking-wide text-primary-700">Email</dt>
               <dd className="mt-1 text-base text-neutral-900">
-                agreesakhainnovatiovations@gmail.com
+                agrisakhainnovatiovations@gmail.com
               </dd>
             </div>
             <div>
@@ -44,12 +46,47 @@ export default function ContactPage() {
               <dt className="text-sm font-semibold uppercase tracking-wide text-primary-700">LinkedIn</dt>
               <dd className="mt-1">
                 <a
-                  href={linkedinUrl}
+                  href={companyLinkedinUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="text-base font-semibold text-primary-700 transition-colors hover:text-primary-500 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >
-                  Follow AGREE-SAKHA on LinkedIn
+                  Follow AGRI-SAKHA on LinkedIn
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="text-sm font-semibold uppercase tracking-wide text-primary-700">Instagram</dt>
+              <dd className="mt-1">
+                <a
+                  href={companyInstagramUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-base font-semibold text-primary-700 transition-colors hover:text-primary-500 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  Follow AGRI-SAKHA on Instagram
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="text-sm font-semibold uppercase tracking-wide text-primary-700">Niranjan</dt>
+              <dd className="mt-1">
+                <a
+                  href="tel:+917353957307"
+                  className="text-base font-semibold text-neutral-900 transition-colors hover:text-primary-700 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  +91 73539 57307
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="text-sm font-semibold uppercase tracking-wide text-primary-700">Aditya</dt>
+              <dd className="mt-1">
+                <a
+                  href="tel:+918217076246"
+                  className="text-base font-semibold text-neutral-900 transition-colors hover:text-primary-700 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+                >
+                  +91 8217076246
                 </a>
               </dd>
             </div>
